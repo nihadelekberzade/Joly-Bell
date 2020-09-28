@@ -1,0 +1,77 @@
+.footer {
+  background: #0d0d0e;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 40px;
+  color: #bfbfbf;
+  font-size: 18px;
+}
+
+.footer .prefix {
+  font-size: 13px;
+  font-weight: 400;
+  color: #616060;
+  text-transform: uppercase;
+}
+
+.footer__content {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.footer__content > div {
+  margin-top: 20px;
+}
+
+.footer__menu {
+  display: none;
+}
+
+.footer .footer-logo {
+  width: 127px;
+  height: 40px;
+}
+
+.footer .email-container .email {
+  font-size: 18px;
+}
+
+.footer__payment-methods .payment-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 5px;
+}
+
+.footer__payment-methods .payment-list .payment-item-visa {
+  width: 52.66px;
+  height: 17px;
+}
+
+.footer__payment-methods .payment-list .payment-item-mastercard {
+  width: 76.8px;
+  height: 64px;
+}
+
+.footer__payment-methods .payment-list .payment-item-privat {
+  width: 64px;
+  height: 64px;
+}
+
+.footer__payment-methods .payment-list .payment-item-liqpay {
+  width: 83.3px;
+  height: 17px;
+}
+
+.footer__copyright {
+  font-size: 18px;
+  line-height: 100%;
+  color: #c9c9c9;
+}
+/*# sourceMappingURL=footer.css.map */

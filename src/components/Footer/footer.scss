@@ -1,0 +1,77 @@
+.footer {
+    background: #0d0d0e;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 40px;
+    color: #bfbfbf;
+    font-size: 18px;
+
+    .prefix {
+        font-size: 13px;
+        font-weight: 400;
+        color: #616060;
+        text-transform: uppercase;
+    }
+
+
+    &__content {
+        width: 300px;
+        margin: 0 auto;
+
+        & > div  {
+            margin-top: 20px;
+        }
+    }
+    &__menu {
+        display: none;
+    }
+    .footer-logo {
+        width: 127px;
+        height: 40px;
+    }
+    .email-container {
+        .email {
+            font-size: 18px;
+        }
+    }
+
+    &__payment-methods {
+        .payment-list {
+            display: flex;
+            column-gap: 10px;
+            align-items: flex-end;
+            margin-top: 5px;
+
+            .payment-item-visa {
+                width: 52.66px;
+                height: 17px;
+            } 
+            .payment-item-mastercard {
+                width: 76.8px;
+                height: 64px;
+            } 
+            .payment-item-privat {
+                width: 64px;
+                height: 64px;
+            } 
+            .payment-item-liqpay {
+                width: 83.3px;
+                height: 17px;
+            } 
+        }
+    }
+
+    &__copyright {
+        font-size: 18px;
+        line-height: 100%;
+        color: #c9c9c9;
+    }
+
+
+    
+
+
+}
+
+
