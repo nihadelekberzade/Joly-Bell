@@ -1,0 +1,30 @@
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+
+
+    &__item {
+        font-size: 15px;
+        font-weight: 400;
+        color: #fff !important;
+        text-transform: uppercase;
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            transform: scaleX(0);
+            height: 1px;
+            transition: transform .5s ease;
+        }
+        &:hover::after {
+            transform: scaleX(1);
+            transform-origin: center;
+        }
+    }
+}
