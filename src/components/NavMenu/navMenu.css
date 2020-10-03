@@ -22,9 +22,9 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #fff;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
+  background: #fff;
   height: 1px;
   -webkit-transition: -webkit-transform .5s ease;
   transition: -webkit-transform .5s ease;
@@ -37,5 +37,10 @@
           transform: scaleX(1);
   -webkit-transform-origin: center;
           transform-origin: center;
+}
+
+.nav-list__item--active::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 /*# sourceMappingURL=navMenu.css.map */
