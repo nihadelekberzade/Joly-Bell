@@ -1,1 +1,63 @@
-/* No CSS *//*# sourceMappingURL=header.css.map */
+.header {
+  background: #000;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+
+.header__logo {
+  width: 112px;
+  height: 36px;
+}
+
+.header__col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+}
+
+.header__nav-btn-container {
+  cursor: pointer;
+  position: relative;
+  height: 20px;
+}
+
+.header__nav-btn {
+  width: 34px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.header__nav-btn::before, .header__nav-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  height: 2px;
+}
+
+.header__nav-btn::before {
+  top: 0;
+}
+
+.header__nav-btn::after {
+  bottom: 0;
+}
+/*# sourceMappingURL=header.css.map */

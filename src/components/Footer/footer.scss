@@ -1,169 +1,152 @@
 .footer {
-    background: #0d0d0e;
+  background: #0d0d0e;
+  width: 100%;
+  padding: 40px;
+  color: #bfbfbf;
+  font-size: 18px;
+  @media (min-width: 1024px) {
+    height: 340px;
+  }
+  @media (min-width: 1600px) {
+    height: 269px;
+  }
+
+  .prefix {
+    font-size: 13px;
+    font-weight: 400;
+    color: #616060;
+    text-transform: uppercase;
+  }
+  &__content {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+
+    & > div {
+      @media (max-width: 1024px) {
+        margin-top: 20px;
+      }
+    }
+    @media (min-width: 1024px) {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__nav-menu {
+    display: none;
     width: 100%;
-    padding: 40px;
-    color: #bfbfbf;
-    font-size: 18px;
-    @media(min-width:1024px) {
-        height: 340px;
+    @media (min-width: 1024px) {
+      display: initial;
     }
-    @media(min-width:1600px) {
-        height: 269px;
+    @media (min-width: 1600px) {
+      width: 1000px;
+      margin-right: auto;
     }
+  }
+  &__menu {
+    display: none;
 
-    .prefix {
-        font-size: 13px;
-        font-weight: 400;
-        color: #616060;
-        text-transform: uppercase;
+    @media (min-width: 1024px) {
+      display: flex;
+      width: 100%;
     }
-    &__content {
-        width: 300px;
-        margin: 0 auto;
-        position: relative;
-        
-
-        & > div  {
-            @media (max-width:1024px){
-                margin-top: 20px;
-            }
-        }
-        @media (min-width:1024px) {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
+  }
+  .footer-logo {
+    width: 127px;
+    height: 40px;
+    @media (min-width: 1024px) {
+      position: absolute;
+      top: 70px;
+      left: 0;
     }
+  }
 
-    &__nav-menu {
-        display: none;
-        width: 100%;
-        @media (min-width:1024px){
-            display: initial;
-        }
-        @media (min-width:1600px){
-            width: 1000px;
-            margin-right: auto;
-        }
+  &__payment-methods {
+    .payment-list {
+      display: flex;
+      column-gap: 10px;
+      align-items: flex-end;
+      margin-top: 5px;
 
+      .payment-item-visa {
+        width: 52.66px;
+        height: 17px;
+      }
+      .payment-item-mastercard {
+        width: 76.8px;
+        height: 64px;
+      }
+      .payment-item-privat {
+        width: 64px;
+        height: 64px;
+      }
+      .payment-item-liqpay {
+        width: 83.3px;
+        height: 17px;
+      }
     }
-    &__menu {
-        display: none;
+    @media (min-width: 1024px) {
+      position: absolute;
+      top: 70px;
+      right: 0;
 
-       @media (min-width:1024px) {
-           display: flex;
-           width: 100%;  
-       }
+      .payment-list {
+        width: 160px;
+        flex-wrap: wrap;
+      }
     }
-    .footer-logo {
-        width: 127px;
-        height: 40px;
-        @media (min-width: 1024px) {
-            position: absolute;
-            top: 70px;
-            left: 0;
-        }
+    @media (min-width: 1600px) {
+      top: 0;
     }
+  }
 
-
-    
-
-    &__payment-methods {
-        .payment-list {
-            display: flex;
-            column-gap: 10px;
-            align-items: flex-end;
-            margin-top: 5px;
-
-            .payment-item-visa {
-                width: 52.66px;
-                height: 17px;
-            } 
-            .payment-item-mastercard {
-                width: 76.8px;
-                height: 64px;
-            } 
-            .payment-item-privat {
-                width: 64px;
-                height: 64px;
-            } 
-            .payment-item-liqpay {
-                width: 83.3px;
-                height: 17px;
-                
-            }
-            
-            
-        }
-        @media (min-width: 1024px) {
-            position: absolute;
-            top: 70px;
-            right: 0;
-
-            .payment-list {
-                width: 160px;
-                flex-wrap: wrap;
-            }
-        }
-        @media (min-width:1600px){
-            top: 0;
-        }
+  &__email-container {
+    @media (min-width: 1024px) {
+      position: absolute;
+      top: 70px;
+      right: 210px;
+      text-align: right;
     }
-
-    &__email-container {
-        @media (min-width: 1024px) {
-            position: absolute;
-            top: 70px;
-            right: 210px;            
-            text-align: right;
-        }
-        @media (min-width:1600px){
-           top: 0;
-        }
+    @media (min-width: 1600px) {
+      top: 0;
     }
+  }
 
-    &__support-time-container {
-        @media (min-width: 1024px) {
-            position: absolute;
-            top: 170px;
-            right: 210px;
-            text-align: right;
-        }
-        @media (min-width:1600px){
-            top: 80px;
-        }
-        
+  &__support-time-container {
+    @media (min-width: 1024px) {
+      position: absolute;
+      top: 170px;
+      right: 210px;
+      text-align: right;
     }
-
-    &__copyright {
-        line-height: 100%;
-        color: #c9c9c9;
-        @media (min-width: 1024px) {
-            position: absolute;
-            top: 170px;
-            left: 0;
-        }
-
+    @media (min-width: 1600px) {
+      top: 80px;
     }
+  }
 
-    &__delivery-text {
-        display: none;
-        @media (min-width: 1024px) {
-            display: initial;
-            text-align: right;
-            position: absolute;
-            bottom: -35px;
-            right: 0;
-        }
+  &__copyright {
+    line-height: 100%;
+    color: #c9c9c9;
+    @media (min-width: 1024px) {
+      position: absolute;
+      top: 170px;
+      left: 0;
     }
+  }
 
-
-    
-
-
+  &__delivery-text {
+    display: none;
+    @media (min-width: 1024px) {
+      display: initial;
+      text-align: right;
+      position: absolute;
+      bottom: -35px;
+      right: 0;
+    }
+  }
 }
-
-

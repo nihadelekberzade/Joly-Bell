@@ -1,34 +1,32 @@
 .nav-list {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
+  &__item {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff !important;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
 
-    &__item {
-        font-size: 15px;
-        font-weight: 400;
-        color: #fff !important;
-        text-transform: uppercase;
-        position: relative;
-        cursor: pointer;
-
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            transform: scaleX(0);
-            background: #fff;
-            height: 1px;
-            transition: transform .5s ease;
-        }
-        &:hover::after {
-            transform: scaleX(1);
-            transform-origin: center;
-        }
-        
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      transform: scaleX(0);
+      background: #fff;
+      height: 1px;
+      transition: transform 0.5s ease;
     }
-    &__item--active::after {
-        transform: scaleX(1);
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: center;
     }
+  }
+  &__item--active::after {
+    transform: scaleX(1);
+  }
 }
