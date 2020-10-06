@@ -10,7 +10,7 @@
 .nav-list__item {
   font-size: 15px;
   font-weight: 400;
-  color: #fff !important;
+  color: #fff;
   text-transform: uppercase;
   position: relative;
   cursor: pointer;
