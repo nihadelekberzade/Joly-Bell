@@ -1,8 +1,7 @@
 import "./sidebar.css";
 import React from "react";
-import { useState } from "react";
 
-export default function Sidebar() {
+export default function Sidebar({ isSidebarActive, toggleSidebar }) {
   const categories = [
     "shirts",
     "sweetshots",
@@ -17,28 +16,28 @@ export default function Sidebar() {
     "FAQ",
   ];
 
-  const [isActive, setActive] = useState(true);
-
-  let toggleSidebar = () => {
-    setActive(!isActive);
-  };
-
-  return isActive ? (
-    <nav className={`sidebar ${isActive ? "active" : ""}`}>
-      <div className="wrapper" onClick={toggleSidebar} />
-      <div className="sidebar__cancel-btn">
-        <i className="fas fa-slash" />
-        <i className="fas fa-slash" />
+  return (
+    <nav className={`sidebar ${isSidebarActive ? `active` : ``}`}>
+      <div className="sidebar__content">
+        <div className="wrapper" onClick={toggleSidebar} />
+        <span className="sidebar__cancel-btn" onClick={toggleSidebar}>
+          <i className="fas fa-slash" />
+          <i className="fas fa-slash" />
+        </span>
+        <ul className="sidebar__list">
+          {categories.map((item, index) => {
+            return (
+              <li
+                className="sidebar__list-item"
+                key={index}
+                onClick={toggleSidebar}
+              >
+                {item}
+              </li>
+            );
+          })}
+        </ul>
       </div>
-      <ul className="sidebar__list">
-        {categories.map((item, index) => {
-          return (
-            <li className="sidebar__list-item" key={index}>
-              {item}
-            </li>
-          );
-        })}
-      </ul>
     </nav>
-  ) : null;
+  );
 }

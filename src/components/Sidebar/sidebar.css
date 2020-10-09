@@ -1,16 +1,21 @@
 .sidebar {
-  position: fixed;
   z-index: 9999;
+  position: fixed;
+  -webkit-transition: right 0.5s ease;
+  transition: right 0.5s ease;
+  right: -200px;
+  top: 50px;
 }
 
 .sidebar__cancel-btn {
-  position: relative;
-  top: 10px;
-  right: 40px;
+  padding: 3px;
   color: #000;
   background: #fff;
   border-radius: 15px;
   cursor: pointer;
+  display: inline-block;
+  margin-left: 150px;
+  margin-bottom: 10px;
 }
 
 .sidebar__cancel-btn:hover {
@@ -34,9 +39,6 @@
 .sidebar__list {
   background: #fff;
   color: #000;
-  position: fixed;
-  top: 50px;
-  right: 30px;
   width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,12 +54,23 @@
 .sidebar__list .sidebar__list-item {
   text-transform: capitalize;
   padding: 15px 45px;
-  border-radius: 15px;
   cursor: pointer;
+  border-top: 0.5px solid darkgray;
 }
 
 .sidebar__list .sidebar__list-item:hover {
   background: #faf8f8;
+}
+
+.sidebar__list :first-child {
+  border-top: none;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.sidebar__list :last-child {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .sidebar .wrapper {
@@ -68,5 +81,15 @@
   height: 100%;
   background: #000;
   opacity: 0.8;
+  z-index: -1;
+  display: none;
+}
+
+.sidebar.active {
+  right: 30px;
+}
+
+.sidebar.active .wrapper {
+  display: initial;
 }
 /*# sourceMappingURL=sidebar.css.map */

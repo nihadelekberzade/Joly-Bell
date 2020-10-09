@@ -50,10 +50,8 @@
   }
   &__menu {
     display: none;
-
     @media (min-width: 1024px) {
       display: flex;
-      width: 100%;
     }
   }
   .footer-logo {
@@ -61,7 +59,7 @@
     height: 40px;
     @media (min-width: 1024px) {
       position: absolute;
-      top: 70px;
+      top: 50px;
       left: 0;
     }
   }
@@ -92,7 +90,7 @@
     }
     @media (min-width: 1024px) {
       position: absolute;
-      top: 70px;
+      top: 50px;
       right: 0;
 
       .payment-list {
@@ -108,7 +106,7 @@
   &__email-container {
     @media (min-width: 1024px) {
       position: absolute;
-      top: 70px;
+      top: 50px;
       right: 210px;
       text-align: right;
     }
@@ -120,7 +118,7 @@
   &__support-time-container {
     @media (min-width: 1024px) {
       position: absolute;
-      top: 170px;
+      top: 130px;
       right: 210px;
       text-align: right;
     }
@@ -134,7 +132,7 @@
     color: #c9c9c9;
     @media (min-width: 1024px) {
       position: absolute;
-      top: 170px;
+      top: 130px;
       left: 0;
     }
   }
@@ -145,7 +143,7 @@
       display: initial;
       text-align: right;
       position: absolute;
-      bottom: -35px;
+      bottom: -20px;
       right: 0;
     }
   }

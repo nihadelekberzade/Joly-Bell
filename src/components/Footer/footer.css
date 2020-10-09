@@ -82,7 +82,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
   }
 }
 
@@ -94,7 +93,7 @@
 @media (min-width: 1024px) {
   .footer .footer-logo {
     position: absolute;
-    top: 70px;
+    top: 50px;
     left: 0;
   }
 }
@@ -134,7 +133,7 @@
 @media (min-width: 1024px) {
   .footer__payment-methods {
     position: absolute;
-    top: 70px;
+    top: 50px;
     right: 0;
   }
   .footer__payment-methods .payment-list {
@@ -153,7 +152,7 @@
 @media (min-width: 1024px) {
   .footer__email-container {
     position: absolute;
-    top: 70px;
+    top: 50px;
     right: 210px;
     text-align: right;
   }
@@ -168,7 +167,7 @@
 @media (min-width: 1024px) {
   .footer__support-time-container {
     position: absolute;
-    top: 170px;
+    top: 130px;
     right: 210px;
     text-align: right;
   }
@@ -188,7 +187,7 @@
 @media (min-width: 1024px) {
   .footer__copyright {
     position: absolute;
-    top: 170px;
+    top: 130px;
     left: 0;
   }
 }
@@ -202,7 +201,7 @@
     display: initial;
     text-align: right;
     position: absolute;
-    bottom: -35px;
+    bottom: -20px;
     right: 0;
   }
 }

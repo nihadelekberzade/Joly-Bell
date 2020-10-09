@@ -1,15 +1,18 @@
 .sidebar {
-  position: fixed;
   z-index: 9999;
-
+  position: fixed;
+  transition: right 0.5s ease;
+  right: -200px;
+  top: 50px;
   &__cancel-btn {
-    position: relative;
-    top: 10px;
-    right: 40px;
+    padding: 3px;
     color: #000;
     background: #fff;
     border-radius: 15px;
     cursor: pointer;
+    display: inline-block;
+    margin-left: 150px;
+    margin-bottom: 10px;
     &:hover {
       background: rgb(250, 248, 248);
     }
@@ -28,9 +31,6 @@
   &__list {
     background: #fff;
     color: #000;
-    position: fixed;
-    top: 50px;
-    right: 30px;
     width: 200px;
     display: flex;
     flex-direction: column;
@@ -39,13 +39,23 @@
     .sidebar__list-item {
       text-transform: capitalize;
       padding: 15px 45px;
-      border-radius: 15px;
       cursor: pointer;
+      border-top: 0.5px solid rgb(169, 169, 169);
       &:hover {
         background: rgb(250, 248, 248);
       }
     }
+    :first-child {
+      border-top: none;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    :last-child {
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
   }
+
   .wrapper {
     position: fixed;
     top: 0;
@@ -54,5 +64,25 @@
     height: 100%;
     background: #000;
     opacity: 0.8;
+    z-index: -1;
+    display: none;
   }
 }
+
+.sidebar.active {
+  right: 30px;
+  .wrapper {
+    display: initial;
+  }
+}
+
+// @keyframes wrapper--appear {
+//   to {
+//     opacity: 0.8;
+//   }
+// }
+// @keyframes wrapper--disappear {
+//   to {
+//     opacity: 0;
+//   }
+// }
