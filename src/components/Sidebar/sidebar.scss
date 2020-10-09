@@ -1,14 +1,18 @@
 .sidebar {
+  position: fixed;
   z-index: 9999;
 
   &__cancel-btn {
-    position: fixed;
+    position: relative;
     top: 10px;
     right: 40px;
     color: #000;
     background: #fff;
     border-radius: 15px;
     cursor: pointer;
+    &:hover {
+      background: rgb(250, 248, 248);
+    }
     :nth-child(1) {
       position: relative;
       top: 2px;
@@ -38,7 +42,7 @@
       border-radius: 15px;
       cursor: pointer;
       &:hover {
-        background: rgb(238, 230, 230);
+        background: rgb(250, 248, 248);
       }
     }
   }
