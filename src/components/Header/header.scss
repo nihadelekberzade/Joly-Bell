@@ -1,38 +1,77 @@
 .header {
   background: #000;
   color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    @media (min-width: 1024px) {
+      flex-direction: column;
+      padding: 40px 0 15px;
+    }
+  }
 
   &__logo {
     width: 112px;
     height: 36px;
+    @media (min-width: 1024px) {
+      width: 225px;
+      height: 72px;
+    }
   }
 
-  &__nav-list {
-    ul {
-      justify-content: flex-start;
-      padding: 10px;
-      row-gap: 10px;
-      text-align: right;
-      display: none;
+  &__second {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @media (min-width: 1024px) {
+      padding: 25px 50px;
+      align-items: center;
+      border-top: 2px solid #fff;
+      margin-top: -2px;
+    }
+    @media (min-width: 1367px) {
+      flex-direction: row;
+    }
+    &__nav-list {
+      width: calc(100vw - 110px);
+      margin: 0 auto;
+      @media (min-width: 1367px) {
+        width: calc(100vw - 500px);
+      }
+      ul {
+        justify-content: space-between;
+        column-gap: 1vw;
+        display: none;
+        @media (min-width: 1024px) {
+          display: flex;
+        }
+      }
+    }
 
-      li {
-        color: #fff;
-        margin-left: 12px;
+    &__col-2 {
+      display: flex;
+      align-items: center;
+      column-gap: 1.5vw;
+      margin-left: auto;
+      margin-right: 15px;
+      @media (min-width: 1024px) {
+        margin-top: 20px;
+      }
+      @media (min-width: 1367px) {
+        margin-top: 0;
       }
     }
   }
 
-  &__col-2 {
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
-  }
   &__nav-btn-container {
     cursor: pointer;
+    @media (min-width: 1024px) {
+      display: none;
+    }
   }
   &__nav-btn {
     position: relative;

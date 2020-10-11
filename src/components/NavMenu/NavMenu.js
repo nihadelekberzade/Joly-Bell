@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 
 export default function NavMenu() {
     const categories = [
-        'shirts', 'sweetshots', 'hoodies',
-        'rubashkas', 'caps', 'shapkas',
-        'polo', 'bags', 'accessories',
-        'memes', 'FAQ'
+        'Футболки', 'Свитшоты', 'Худи',
+        'Рубашки', 'Кепки', 'Шапки',
+        'Поло', 'Рюкзаки', 'Сувениры',
+        'Memes', 'FAQ', 'Статус заказа'
     ]
     const [currentCategory, setCategory] = useState(null);
 

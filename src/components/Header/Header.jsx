@@ -13,22 +13,27 @@ export default function Header() {
 
   return (
     <header className="header">
-      <img className="header__logo" src={images.logo} alt="logo img"></img>
-      <div className="header__nav-list">
-        <NavMenu />
-      </div>
+      <div className="header__content">
+        <img className="header__logo" src={images.logo} alt="logo img"></img>
 
-      <Sidebar
-        isSidebarActive={isSidebarActive}
-        toggleSidebar={toggleSidebar}
-      />
+        <div className="header__second">
+          <div className="header__second__nav-list">
+            <NavMenu />
+          </div>
 
-      <div className="header__col-2">
-        <i className="far fa-user header__user-icon" />
-        <i className="fas fa-shopping-cart header-cart-icon" />
-        <div className="header__nav-btn-container" onClick={toggleSidebar}>
-          <div className="header__nav-btn" />
+          <div className="header__second__col-2">
+            <i className="far fa-user header__user-icon" />
+            <i className="fas fa-shopping-cart header-cart-icon" />
+            <div className="header__nav-btn-container" onClick={toggleSidebar}>
+              <div className="header__nav-btn" />
+            </div>
+          </div>
         </div>
+
+        <Sidebar
+          isSidebarActive={isSidebarActive}
+          toggleSidebar={toggleSidebar}
+        />
       </div>
     </header>
   );
