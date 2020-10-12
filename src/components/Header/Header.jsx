@@ -4,17 +4,21 @@ import { images } from "../../img/images";
 import NavMenu from "../NavMenu/NavMenu";
 import Sidebar from "../Sidebar/Sidebar";
 import Login from "../Login/Login";
+import Cart from "../Cart/Cart";
 
 export default function Header() {
   const [isSidebarActive, setSidebarActive] = useState(false);
   const [isLoginTabActive, setLoginTabActive] = useState(false);
+  const [isCartActive, setCartActive] = useState(false);
 
   let toggleSidebar = () => {
     setSidebarActive(!isSidebarActive);
   };
   let toggleLoginTab = () => {
-    console.log("login");
     setLoginTabActive(!isLoginTabActive);
+  };
+  let toggleCart = () => {
+    setCartActive(!isCartActive);
   };
 
   return (
@@ -28,19 +32,24 @@ export default function Header() {
           </div>
 
           <div className="header-second__col-2">
-            <i className="far fa-user icon" onClick={toggleLoginTab} />
-            <i className="fas fa-shopping-cart icon" />
+            <div className="user-icon-container">
+              <i className="far fa-user icon" onClick={toggleLoginTab} />
+              <Login
+                isLoginTabActive={isLoginTabActive}
+                toggleLoginTab={toggleLoginTab}
+              />
+            </div>
+
+            <div className="card-container">
+              <i className="fas fa-shopping-cart icon" onClick={toggleCart} />
+              <Cart isCartActive={isCartActive} toggleCart={toggleCart} />
+            </div>
+
             <div className="header__nav-btn-container" onClick={toggleSidebar}>
               <div className="header__nav-btn" />
             </div>
           </div>
         </div>
-
-        <Login
-          isLoginTabActive={isLoginTabActive}
-          toggleSidebar={toggleSidebar}
-        />
-
         <Sidebar
           isSidebarActive={isSidebarActive}
           toggleSidebar={toggleSidebar}

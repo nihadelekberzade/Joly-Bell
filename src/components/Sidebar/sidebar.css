@@ -26,14 +26,16 @@
   position: relative;
   top: 2px;
   right: -10px;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  -webkit-transform: scaleX(-1) rotate(8deg);
+          transform: scaleX(-1) rotate(8deg);
 }
 
 .sidebar__cancel-btn :nth-child(2) {
   position: relative;
   top: 2px;
   right: 10px;
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
 }
 
 .sidebar__list {
