@@ -10,6 +10,9 @@
   line-height: 1.6;
   font-family: "Hind", Arial, sans-serif;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 ul,
 ol {
   list-style-type: none;

@@ -11,13 +11,21 @@ export default function Header() {
   const [isLoginTabActive, setLoginTabActive] = useState(false);
   const [isCartActive, setCartActive] = useState(false);
 
+  let togglePageScroll = (info) => {
+    info
+      ? (document.body.style.overflowY = "scroll")
+      : (document.body.style.overflowY = "hidden");
+  };
+
   let toggleSidebar = () => {
     setSidebarActive(!isSidebarActive);
   };
   let toggleLoginTab = () => {
+    togglePageScroll(isLoginTabActive);
     setLoginTabActive(!isLoginTabActive);
   };
   let toggleCart = () => {
+    togglePageScroll(isCartActive);
     setCartActive(!isCartActive);
   };
 
@@ -25,7 +33,6 @@ export default function Header() {
     <header className="header">
       <div className="header__content">
         <img className="header__logo" src={images.logo} alt="logo img" />
-
         <div className="header-second">
           <div className="header-second__nav-list">
             <NavMenu />
@@ -39,10 +46,8 @@ export default function Header() {
                 toggleLoginTab={toggleLoginTab}
               />
             </div>
-
             <div className="card-container">
               <i className="fas fa-shopping-cart icon" onClick={toggleCart} />
-              <Cart isCartActive={isCartActive} toggleCart={toggleCart} />
             </div>
 
             <div className="header__nav-btn-container" onClick={toggleSidebar}>
@@ -50,6 +55,7 @@ export default function Header() {
             </div>
           </div>
         </div>
+        <Cart isCartActive={isCartActive} toggleCart={toggleCart} />
         <Sidebar
           isSidebarActive={isSidebarActive}
           toggleSidebar={toggleSidebar}

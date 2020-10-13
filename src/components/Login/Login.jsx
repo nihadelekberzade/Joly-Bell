@@ -6,9 +6,9 @@ import React from "react";
 export default function Login({ isLoginTabActive, toggleLoginTab }) {
   return (
     <div className={`login ${isLoginTabActive ? `active` : ``}`}>
-      <div className="blackout" onClick={toggleLoginTab} />
-      <div className="login__arrow"></div>
       <div className="login__content">
+        <div className="wrapper" onClick={toggleLoginTab} />
+        <div className="login__arrow"></div>
         <span className="login__cancel-btn" onClick={toggleLoginTab}>
           <i className="fas fa-slash" />
           <i className="fas fa-slash" />
@@ -36,7 +36,7 @@ export default function Login({ isLoginTabActive, toggleLoginTab }) {
               name="remember"
               id="checkbox"
             />
-            <label className="form__remember-text" for="checkbox">
+            <label className="form__remember-text" htmlFor="checkbox">
               Запомнить
             </label>
             <span className="form__forgot-password-text">Забыли пароль?</span>
@@ -48,8 +48,8 @@ export default function Login({ isLoginTabActive, toggleLoginTab }) {
         <div className="login-second">
           Login from
           <div className="login-second__social-links">
-            <i class="fab fa-google"></i>
-            <i class="fab fa-vk"></i>
+            <i className="fab fa-google"></i>
+            <i className="fab fa-vk"></i>
           </div>
           <span className="login-second__or-text">or</span>
           <div className="login-second__registration-link">

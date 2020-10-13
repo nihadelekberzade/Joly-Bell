@@ -38,6 +38,7 @@ export default function Cart({ isCartActive, toggleCart }) {
             </span>
             <span className="check__cost-value check-item__value">0 RUB</span>
           </div>
+
           <div className="check__delivery-cost check-item">
             <span className="check__delivery-cost-title check-item__title">
               СТОИМОСТЬ ДОСТАВКИ:
@@ -46,6 +47,7 @@ export default function Cart({ isCartActive, toggleCart }) {
               0 RUB
             </span>
           </div>
+
           <div className="check__total-cost check-item">
             <span className="check__total-cost-title check-item__title">
               ИТОГО:
@@ -56,7 +58,7 @@ export default function Cart({ isCartActive, toggleCart }) {
           </div>
         </div>
 
-        <span className="cart__checkout-btn">Pruchase</span>
+        <span className="cart__checkout-btn">Purchase</span>
       </div>
     </div>
   );

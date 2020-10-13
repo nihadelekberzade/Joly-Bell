@@ -1,14 +1,18 @@
 .login.active {
   display: initial;
+  .wrapper {
+    display: initial;
+  }
 }
 .login {
   display: none;
   z-index: 999;
-  width: clamp(300px, 366px, 90vw);
+  width: clamp(260px, 366px, 90vw);
   position: absolute;
   top: 50px;
   right: -84px;
   color: #818d92;
+
   &__arrow {
     content: "";
     position: absolute;
@@ -157,14 +161,14 @@
     }
   }
 
-  .blackout {
+  .wrapper {
     position: fixed;
     z-index: -1;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: #000;
-    opacity: 0.8;
+    opacity: 0.4;
   }
 }

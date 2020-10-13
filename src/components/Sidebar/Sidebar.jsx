@@ -18,8 +18,8 @@ export default function Sidebar({ isSidebarActive, toggleSidebar }) {
 
   return (
     <nav className={`sidebar ${isSidebarActive ? `active` : ``}`}>
+      <div className="wrapper" onClick={toggleSidebar} />
       <div className="sidebar__content">
-        <div className="wrapper" onClick={toggleSidebar} />
         <span className="sidebar__cancel-btn" onClick={toggleSidebar}>
           <i className="fas fa-slash" />
           <i className="fas fa-slash" />

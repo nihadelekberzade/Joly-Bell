@@ -1,6 +1,14 @@
+.sidebar.active {
+  right: 30px;
+}
+
+.sidebar.active .wrapper {
+  display: initial;
+}
+
 .sidebar {
-  z-index: 9999;
   position: fixed;
+  z-index: 999;
   -webkit-transition: right 0.5s ease;
   transition: right 0.5s ease;
   right: -200px;
@@ -81,17 +89,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000;
-  opacity: 0.8;
+  background: rgba(0, 0, 0, 0.4);
   z-index: -1;
   display: none;
-}
-
-.sidebar.active {
-  right: 30px;
-}
-
-.sidebar.active .wrapper {
-  display: initial;
 }
 /*# sourceMappingURL=sidebar.css.map */
