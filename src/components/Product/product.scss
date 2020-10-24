@@ -2,6 +2,8 @@
   position: relative;
   $background-color: #fff;
   $transition-duration: 0.7s;
+  display: flex;
+  flex-direction: column;
 
   &__price-tag {
     color: #fff;
@@ -24,13 +26,10 @@
     position: relative;
   }
   &__img {
-    background: $background-color;
-    padding: 50px;
-    border-radius: 29px;
     width: 100%;
-    position: static;
-    top: 50px;
-    left: 0;
+    background: $background-color;
+    padding: 50px 30px 20px;
+    border-radius: 29px;
     border-top-left-radius: 36px;
   }
   &__blackout {
@@ -55,8 +54,6 @@
     border-radius: 100px;
     background: transparent;
     color: transparent;
-    font-size: 15px;
-    font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: background $transition-duration ease,
@@ -68,7 +65,7 @@
     font-size: 18px;
     letter-spacing: 2px;
     border-radius: 29px;
-    margin-top: 10px;
+    margin-top: 15px;
     background: $background-color;
     padding: 10px;
     transition: background $transition-duration ease,

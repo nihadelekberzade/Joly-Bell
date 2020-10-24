@@ -1,11 +1,9 @@
 .main {
   background: #fcf9f9;
-  background: #222;
   padding: 50px 0 155px;
 }
 
 .main__container {
-  width: 100%;
   margin: 0 auto;
   max-width: 1395px;
   padding: 0 15px;
@@ -14,7 +12,7 @@
 .main__category-title {
   font-size: 38px;
   font-weight: 500;
-  color: #fff;
+  color: #000;
 }
 
 .main__category-list {

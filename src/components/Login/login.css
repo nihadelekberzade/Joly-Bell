@@ -52,7 +52,7 @@
 .login__cancel-btn {
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 25px;
   cursor: pointer;
   color: #000;
   display: inline-block;
@@ -60,20 +60,9 @@
   margin-bottom: 10px;
 }
 
-.login__cancel-btn :nth-child(1) {
-  position: relative;
-  top: 2px;
-  right: -10px;
-  -webkit-transform: scaleX(-1) rotate(8deg);
-          transform: scaleX(-1) rotate(8deg);
-}
-
-.login__cancel-btn :nth-child(2) {
-  position: relative;
-  top: 2px;
-  right: 10px;
-  -webkit-transform: rotate(8deg);
-          transform: rotate(8deg);
+.login__cancel-btn img {
+  width: 20px;
+  cursor: pointer;
 }
 
 .login .form {

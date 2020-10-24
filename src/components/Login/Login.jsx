@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "./login.css";
 import React from "react";
+import { images } from "../../img/images";
 
 export default function Login({ isLoginTabActive, toggleLoginTab }) {
   return (
@@ -10,8 +11,7 @@ export default function Login({ isLoginTabActive, toggleLoginTab }) {
         <div className="wrapper" onClick={toggleLoginTab} />
         <div className="login__arrow"></div>
         <span className="login__cancel-btn" onClick={toggleLoginTab}>
-          <i className="fas fa-slash" />
-          <i className="fas fa-slash" />
+          <img src={images.cancel} alt="cancel" />
         </span>
 
         <form className="form">
@@ -44,7 +44,6 @@ export default function Login({ isLoginTabActive, toggleLoginTab }) {
 
           <span className="form__login-btn">login</span>
         </form>
-
         <div className="login-second">
           Login from
           <div className="login-second__social-links">
