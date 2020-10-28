@@ -32,13 +32,16 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header__content">
-        <img className="header__logo" src={images.logo} alt="logo img" />
-        <div className="header-second">
-          <div className="header-second__nav-list">
+        <div className="header__logo-box">
+          <img className="header__logo" src={images.logo} alt="logo img"></img>
+        </div>
+
+        <div className="header__second">
+          <div className="nav-menu">
             <NavMenu />
           </div>
 
-          <div className="header-second__col-2">
+          <div className="header__others">
             <div className="user-icon-container">
               <i className="far fa-user icon" onClick={toggleLoginTab} />
               <Login
@@ -46,21 +49,21 @@ export default function Header() {
                 toggleLoginTab={toggleLoginTab}
               />
             </div>
-            <div className="card-container">
-              <i className="fas fa-shopping-cart icon" onClick={toggleCart} />
-            </div>
+
+            <i className="fas fa-shopping-cart icon" onClick={toggleCart} />
 
             <div className="header__nav-btn-container" onClick={toggleSidebar}>
-              <div className="header__nav-btn" />
+              <span className="header__nav-btn" />
             </div>
           </div>
         </div>
-        <Cart isCartActive={isCartActive} toggleCart={toggleCart} />
-        <Sidebar
-          isSidebarActive={isSidebarActive}
-          toggleSidebar={toggleSidebar}
-        />
       </div>
+
+      <Cart isCartActive={isCartActive} toggleCart={toggleCart} />
+      <Sidebar
+        isSidebarActive={isSidebarActive}
+        toggleSidebar={toggleSidebar}
+      />
     </header>
   );
 }

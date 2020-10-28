@@ -4,11 +4,10 @@ import React from 'react'
 export default function Product({ name, price, imageUrl }) {
     return (
         <div className='product'>
-            <span className='product__price-tag'>
+            <h2 className='product__price-tag'>
                 {price} RUB
-            </span>
+            </h2>
             <header className='product__header'>
-                <div className='product__blackout' />
                 <img className='product__img'
                     src={require('../../img/clothes/hoodie-black.png')}
                     alt='product img'

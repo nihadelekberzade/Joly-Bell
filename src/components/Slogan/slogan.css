@@ -1,31 +1,31 @@
 .slogan {
-  width: 100%;
-  min-height: 140px;
   background: #fff;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
+  text-align: center;
+  height: 14rem;
+  padding: 2rem;
 }
 
 .slogan h2 {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 4vw;
   font-weight: 700;
-  font-size: 3.88889vw;
   line-height: calc(33px + 2vw);
-  word-spacing: 1.48148vw;
+  word-spacing: 1.48vw;
 }
 
-@media only screen and (min-width: 540px) {
+@media (min-width: 540px) {
   .slogan h2 {
-    font-size: 21px;
-    line-height: 43px;
+    font-size: 2.1rem;
+    line-height: 4.3rem;
     word-spacing: 8px;
   }
 }
 
 .slogan .white-span {
-  display: inline-block;
   color: #fff;
   background: #000;
-  padding: 9px 15px;
+  padding: 4px 10px;
 }
 /*# sourceMappingURL=slogan.css.map */
