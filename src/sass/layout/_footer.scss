@@ -11,16 +11,27 @@
     height: 300px;
   }
 
+  .joly-bell {
+    width: 127px;
+    height: 40px;
+    fill: rgba($color: #fff, $alpha: 0.8);
+    @media (min-width: 1024px) {
+      position: absolute;
+      top: 50px;
+      left: 0;
+    }
+  }
+
   .prefix {
     font-size: 13px;
     font-weight: 400;
     color: #616060;
     text-transform: uppercase;
   }
+
   &__content {
-    width: 300px;
-    margin: 0 auto;
     position: relative;
+    text-align: center;
 
     & > div {
       @media (max-width: 1024px) {
@@ -52,15 +63,6 @@
     display: none;
     @media (min-width: 1024px) {
       display: flex;
-    }
-  }
-  .footer-logo {
-    width: 127px;
-    height: 40px;
-    @media (min-width: 1024px) {
-      position: absolute;
-      top: 50px;
-      left: 0;
     }
   }
 
@@ -102,7 +104,6 @@
       top: 0;
     }
   }
-
   &__email-container {
     @media (min-width: 1024px) {
       position: absolute;
@@ -114,7 +115,6 @@
       top: 0;
     }
   }
-
   &__support-time-container {
     @media (min-width: 1024px) {
       position: absolute;
@@ -126,7 +126,6 @@
       top: 80px;
     }
   }
-
   &__copyright {
     line-height: 100%;
     color: #c9c9c9;
@@ -136,7 +135,6 @@
       left: 0;
     }
   }
-
   &__delivery-text {
     display: none;
     @media (min-width: 1024px) {

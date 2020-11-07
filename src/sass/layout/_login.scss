@@ -1,28 +1,30 @@
-.login.active {
-  display: initial;
-  .wrapper {
-    display: initial;
-  }
-}
 .login {
   display: none;
   z-index: 999;
   width: clamp(260px, 366px, 90vw);
   position: absolute;
-  top: 50px;
-  right: -84px;
+  top: 5rem;
+  right: -8.5rem;
   color: #818d92;
+
+  &--active {
+    display: block;
+    animation: login-appear 0.8s backwards;
+    .wrapper {
+      display: block;
+    }
+  }
 
   &__arrow {
     content: "";
     position: absolute;
-    width: 30px;
-    height: 30px;
-    top: -10px;
-    right: 77px;
+    width: 3rem;
+    height: 3rem;
+    top: -1rem;
+    right: 7.7rem;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    border-radius: 5px;
+    border-radius: 0.5rem;
     background: #fff;
   }
   &__content {
@@ -107,7 +109,6 @@
       cursor: pointer;
     }
   }
-
   .login-second {
     text-align: center;
     margin-top: 15px;
@@ -160,7 +161,6 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #000;
-    opacity: 0.4;
+    background: rgba($color: #000, $alpha: 0.4);
   }
 }

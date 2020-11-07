@@ -1,4 +1,4 @@
-.main {
+.category {
   background: rgb(252, 249, 249);
   padding: 5rem 0 15.5rem;
 
@@ -7,12 +7,12 @@
     max-width: 1395px;
     padding: 0 1.5rem;
   }
-  &__category-title {
+  &__title {
+    text-align: center;
     font-size: 3.8rem;
     font-weight: 500;
-    color: #000;
   }
-  &__category-list {
+  &-list {
     display: flex;
     flex-wrap: wrap;
     margin-top: 3rem;

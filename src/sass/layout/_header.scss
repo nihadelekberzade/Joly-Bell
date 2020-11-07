@@ -25,6 +25,7 @@
     display: inline-block;
     width: 11.2rem;
     height: 3.6rem;
+    fill: #fff;
     @media (min-width: 1024px) {
       width: 22.5rem;
       height: 7.2rem;
@@ -54,6 +55,8 @@
     }
   }
   &__others {
+    display: flex;
+    align-items: center;
     @media (min-width: 1024px) {
       margin-top: 1rem;
       display: flex;

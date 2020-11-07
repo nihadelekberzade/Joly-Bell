@@ -1,14 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-
 import React from "react";
 import { images } from "../img/images";
 
 export default function Login({ isLoginTabActive, toggleLoginTab }) {
   return (
-    <div className={`login ${isLoginTabActive ? `active` : ``}`}>
+    <div className={`login ${isLoginTabActive ? `login--active` : ``}`}>
       <div className="login__content">
         <div className="wrapper" onClick={toggleLoginTab} />
+
         <div className="login__arrow"></div>
         <span className="login__cancel-btn" onClick={toggleLoginTab}>
           <img src={images.cancel} alt="cancel" />
@@ -28,7 +28,6 @@ export default function Login({ isLoginTabActive, toggleLoginTab }) {
             <div className="form__password-text">Пароль</div>
             <input className="form__password" type="password" />
           </div>
-
           <div className="form__remember-content">
             <input
               className="form__remember-checkbox"
@@ -41,7 +40,6 @@ export default function Login({ isLoginTabActive, toggleLoginTab }) {
             </label>
             <span className="form__forgot-password-text">Забыли пароль?</span>
           </div>
-
           <span className="form__login-btn">login</span>
         </form>
         <div className="login-second">

@@ -29,13 +29,13 @@ export default function Main() {
     },
   ];
   return (
-    <main className="main">
-      <div className="main__container">
-        <h2 className="main__category-title">Title</h2>
-        <ul className="main__category-list">
+    <main className="category">
+      <div className="category__container">
+        <h2 className="category__title">Title</h2>
+        <ul className="category-list">
           {shirts.map((item, index) => {
             return (
-              <li className="main__category-list__item" key={index}>
+              <li className="category-list__item" key={index}>
                 <Product name={item.name} price={item.price} />
               </li>
             );
