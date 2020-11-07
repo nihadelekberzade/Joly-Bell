@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-family: "Hind", sans-serif;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+input {
+  font-family: inherit;
+  color: inherit;
+  display: block;
+  border: none;
+}
+button {
+  outline: none;
+  border: none;
+}

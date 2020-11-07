@@ -1,14 +1,13 @@
 import React from 'react';
-import './reset.css'
-import './App.css';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header.jsx';
-import Main from './components/Main/Main';
-import Slogan from './components/Slogan/Slogan';
+import './sass/style.css';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Main from './components/Main';
+import Slogan from './components/Slogan';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
       <Main />
       <Slogan />
