@@ -34,33 +34,17 @@ export default function Footer() {
         <div className="footer__payment-methods">
           <div className="prefix payment-prefix">ПРИНИМАЕМ К ОПЛАТЕ:</div>
           <ul className="payment-list">
-            <li>
-              <img
-                className="payment-item-visa"
-                src={images.visa}
-                alt="payment"
-              />
+            <li className="payment-item payment-item--visa">
+              <img src={images.visa} alt="payment" />
             </li>
-            <li>
-              <img
-                className="payment-item-mastercard"
-                src={images.master_card}
-                alt="payment"
-              />
+            <li className="payment-item payment-item--mastercard">
+              <img src={images.master_card} alt="payment" />
             </li>
-            <li>
-              <img
-                className="payment-item-privat"
-                src={images.privat}
-                alt="payment"
-              />
+            <li className="payment-item payment-item--privat">
+              <img src={images.privat} alt="payment" />
             </li>
-            <li>
-              <img
-                className="payment-item-liqpay"
-                src={images.liqpay}
-                alt="payment"
-              />
+            <li className="payment-item payment-item--liqpay">
+              <img src={images.liqpay} alt="payment" />
             </li>
           </ul>
         </div>

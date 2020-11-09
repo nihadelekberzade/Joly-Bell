@@ -43,23 +43,25 @@
     flex-direction: column;
     text-align: left;
     border-radius: 15px;
-    .sidebar__list-item {
-      text-transform: capitalize;
-      padding: 15px 25px;
-      cursor: pointer;
-      border-top: 0.5px solid rgb(169, 169, 169);
-      &:hover {
-        background: rgb(250, 248, 248);
-      }
-    }
-    :first-child {
+  }
+  &__list-item {
+    text-transform: capitalize;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-top: 0.5px solid rgb(169, 169, 169);
+
+    &:first-child {
       border-top: none;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
     }
-    :last-child {
+    &:last-child {
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
+    }
+
+    &:hover {
+      background: rgb(250, 248, 248);
     }
   }
 

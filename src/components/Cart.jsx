@@ -3,27 +3,24 @@ import { images } from "../img/images";
 
 export default function Cart({ isCartActive, toggleCart }) {
   return (
-    <div className={`cart ${isCartActive ? `active` : ``}`}>
+    <div className={`cart ${isCartActive ? `cart--active` : ``}`}>
       <div className="wrapper" onClick={toggleCart}></div>
-      <div className="content">
+      <div className="cart__content">
         <div className="back-btn" onClick={toggleCart}>
           <img
             className="back-btn__icon"
             src={images.leftArrow}
             alt="left arrow"
           />
-          <span className="back-btn__text">Resume shopping</span>
+          <h3 className="back-btn__text">Resume shopping</h3>
         </div>
 
-        <div className="title">
-          <span title="title__text">Мои покупки</span>
-          <span className="title__line"></span>
-        </div>
+        <h2 class="cart__title">Мои покупки</h2>
 
         <div className="promo">
           <h3 className="promo__text">ПРОМОКОД</h3>
           <form className="promo__form">
-            <input className="promo__promocode-input" type="text" />
+            <input className="promo__input" type="text" />
             <button className="promo__apply-btn" type="button">
               apply
             </button>

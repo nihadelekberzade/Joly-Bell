@@ -69,25 +69,49 @@
   &__payment-methods {
     .payment-list {
       display: flex;
-      column-gap: 10px;
+      justify-content: center;
       align-items: flex-end;
       margin-top: 5px;
 
-      .payment-item-visa {
-        width: 52.66px;
-        height: 17px;
+      & > li:not(:last-child) {
+        margin-right: 1rem;
       }
-      .payment-item-mastercard {
-        width: 76.8px;
-        height: 64px;
-      }
-      .payment-item-privat {
-        width: 64px;
-        height: 64px;
-      }
-      .payment-item-liqpay {
-        width: 83.3px;
-        height: 17px;
+
+      .payment-item {
+        &--visa {
+          width: 52.66px;
+          height: 17px;
+        }
+        &--mastercard {
+          width: 76.8px;
+          height: 64px;
+        }
+        &--privat {
+          width: 64px;
+          height: 64px;
+        }
+        &--liqpay {
+          width: 83.3px;
+          height: 17px;
+        }
+
+        @media only screen and (min-width: 1024px) {
+          &--visa {
+            order: -4;
+          }
+          &--liqpay {
+            order: -3;
+          }
+          &--mastercard {
+            order: -2;
+          }
+          &--privat {
+            order: -1;
+          }
+          &:nth-child(n + 2) {
+            margin-top: 2rem;
+          }
+        }
       }
     }
     @media (min-width: 1024px) {
@@ -96,14 +120,16 @@
       right: 0;
 
       .payment-list {
-        width: 160px;
+        justify-content: space-between;
         flex-wrap: wrap;
+        width: 17rem;
       }
     }
     @media (min-width: 1600px) {
       top: 0;
     }
   }
+
   &__email-container {
     @media (min-width: 1024px) {
       position: absolute;
@@ -127,7 +153,7 @@
     }
   }
   &__copyright {
-    line-height: 100%;
+    line-height: 1;
     color: #c9c9c9;
     @media (min-width: 1024px) {
       position: absolute;

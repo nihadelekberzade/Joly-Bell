@@ -17,22 +17,24 @@
       display: block;
     }
   }
-
   &__logo-box {
     text-align: center;
   }
+
   &__logo {
-    display: inline-block;
+    display: block;
+    text-align: center;
     width: 11.2rem;
     height: 3.6rem;
     fill: #fff;
     @media (min-width: 1024px) {
       width: 22.5rem;
       height: 7.2rem;
+      margin: auto;
     }
   }
 
-  .nav-menu {
+  &__nav-menu {
     display: none;
     @media (min-width: 1024px) {
       display: block;
@@ -46,7 +48,7 @@
     @media (min-width: 1024px) {
       padding: 2.5rem 5rem;
       border-top: 4px solid #fff;
-      margin-top: -13px;
+      margin-top: -4px;
     }
     @media (min-width: 1367px) {
       display: flex;
@@ -57,6 +59,11 @@
   &__others {
     display: flex;
     align-items: center;
+
+    & > *:not(:last-child) {
+      margin-right: 1rem;
+    }
+
     @media (min-width: 1024px) {
       margin-top: 1rem;
       display: flex;
@@ -80,8 +87,8 @@
   .user-icon-container {
     display: inline-block;
     position: relative;
+    height: 1.9rem;
   }
-
   &__nav-btn-container {
     cursor: pointer;
     display: inline-block;
