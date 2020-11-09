@@ -16,7 +16,7 @@ export default function Sidebar({ isSidebarActive, toggleSidebar }) {
   ];
 
   return (
-    <nav className={`sidebar ${isSidebarActive ? `active` : ``}`}>
+    <nav className={`sidebar ${isSidebarActive ? `sidebar--active` : ``}`}>
       <div className="wrapper" onClick={toggleSidebar} />
       <div className="sidebar__content">
         <span className="sidebar__cancel-btn" onClick={toggleSidebar}>

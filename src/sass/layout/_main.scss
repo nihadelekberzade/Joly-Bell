@@ -3,8 +3,8 @@
   padding: 5rem 0 15.5rem;
 
   &__container {
-    margin: 0 auto;
     max-width: 1395px;
+    margin: 0 auto;
     padding: 0 1.5rem;
   }
   &__title {
@@ -12,27 +12,35 @@
     font-size: 3.8rem;
     font-weight: 500;
   }
-  &-list {
+  &__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 3rem;
-    row-gap: 4rem;
+    max-width: 85vw;
+    margin: 0 auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
 
-    &__item {
-      margin: 0 auto;
-      // @media (min-width: 480px) and (max-width: 767px) {
-      //   width: 430px;
-      // }
-      // @media (min-width: 768px) and (max-width: 1023px) {
-      //   width: calc((87.5vw - 35px) / 2);
-      // }
-
-      // @media (min-width: 1280px) and (max-width: 1599px) {
-      //   width: calc((86vw - 70px) / 3);
-      // }
-      // @media (min-width: 1600px) {
-      //   width: 430px;
-      // }
+    @media (min-width: 480px) and (max-width: 767px) {
+      width: 430px;
     }
+  }
+  &__item {
+    &:nth-child(n + 4) {
+      margin-top: 3rem;
+    }
+    @media (min-width: 480px) and (max-width: 767px) {
+      flex: 0 0 100%;
+    }
+
+    // @media (min-width: 768px) and (max-width: 1023px) {
+    //   width: calc((87.5vw - 35px) / 2);
+    // }
+
+    // @media (min-width: 1280px) and (max-width: 1599px) {
+    //   width: calc((86vw - 70px) / 3);
+    // }
+    // @media (min-width: 1600px) {
+    //   width: 430px;
+    // }
   }
 }

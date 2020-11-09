@@ -2,35 +2,39 @@
   position: relative;
   $background-color: #fff;
   $transition-duration: 0.5s;
+  $border-radius: 2.9rem;
 
   &__price-tag {
     color: #fff;
     background: #000;
+    line-height: 1;
     margin-bottom: -2rem;
+    position: absolute;
     width: 200px;
     height: 40px;
-    padding: 0 24px;
     font-size: 24px;
-    z-index: 125;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: $border-radius;
+    z-index: 5;
   }
   &__header {
     position: relative;
-    border-radius: 29px;
+    border-radius: $border-radius;
     overflow: hidden;
   }
   &__img {
     background: $background-color;
     padding: 5rem 3rem 2rem;
     transition: filter 0.5s;
+    width: 100%;
   }
 
   &__details-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 220px;
-    height: 50px;
+    @include absCenter;
+    width: 22rem;
+    height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,21 +42,20 @@
     text-transform: uppercase;
     background-color: #fff;
     opacity: 0;
-    transition: opacity $transition-duration ease;
+    transition: opacity $transition-duration;
     cursor: pointer;
   }
   &__name {
     font-size: 18px;
     letter-spacing: 2px;
-    border-radius: 29px;
-    margin-top: 15px;
-    background: $background-color;
-    padding: 10px;
-    transition: background $transition-duration ease,
-      color $transition-duration ease;
+    margin-top: 1.5rem;
+    padding: 1rem;
     cursor: pointer;
+    text-align: center;
+    border-radius: $border-radius;
+    background-color: $background-color;
+    transition: background $transition-duration, color $transition-duration;
   }
-
   &:hover &__img {
     filter: brightness(40%);
   }
