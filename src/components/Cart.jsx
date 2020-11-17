@@ -15,7 +15,7 @@ function Cart({ isCartActive, toggleCart }) {
           <h3 className="back-btn__text">Resume shopping</h3>
         </div>
 
-        <h2 class="cart__title">Мои покупки</h2>
+        <h2 className="cart__title">Мои покупки</h2>
 
         <div className="promo">
           <h3 className="promo__text">ПРОМОКОД</h3>

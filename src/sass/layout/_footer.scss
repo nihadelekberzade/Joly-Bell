@@ -1,14 +1,13 @@
 .footer {
   background: #0d0d0e;
-  width: 100%;
-  padding: 40px;
+  padding: 4rem;
   color: #bfbfbf;
   font-size: 18px;
   @media (min-width: 1024px) {
-    height: 340px;
+    height: 34rem;
   }
   @media (min-width: 1600px) {
-    height: 300px;
+    height: 30rem;
   }
 
   .joly-bell {
@@ -35,7 +34,7 @@
 
     & > div {
       @media (max-width: 1024px) {
-        margin-top: 20px;
+        margin-top: 1.5rem;
       }
     }
     @media (min-width: 1024px) {
@@ -78,6 +77,7 @@
       }
 
       .payment-item {
+        flex-shrink: 0;
         &--visa {
           width: 52.66px;
           height: 17px;
