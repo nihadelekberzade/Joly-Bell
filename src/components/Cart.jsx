@@ -1,7 +1,7 @@
 import React from "react";
 import { images } from "../img/images";
 
-export default function Cart({ isCartActive, toggleCart }) {
+function Cart({ isCartActive, toggleCart }) {
   return (
     <div className={`cart ${isCartActive ? `cart--active` : ``}`}>
       <div className="wrapper" onClick={toggleCart}></div>
@@ -59,3 +59,4 @@ export default function Cart({ isCartActive, toggleCart }) {
     </div>
   );
 }
+export default Cart;

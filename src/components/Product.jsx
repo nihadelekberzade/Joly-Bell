@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Product({ name, price, imageUrl }) {
+function Product({ name, price, imageUrl }) {
   return (
     <div className="product">
       <header className="product__header">
@@ -16,3 +16,4 @@ export default function Product({ name, price, imageUrl }) {
     </div>
   );
 }
+export default Product;

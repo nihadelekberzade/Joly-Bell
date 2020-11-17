@@ -10,20 +10,22 @@
     line-height: 1;
     margin-bottom: -2rem;
     position: absolute;
-    width: 200px;
-    height: 40px;
-    font-size: 24px;
+    width: 20rem;
+    height: 4rem;
+    font-size: 2.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom-right-radius: $border-radius;
     z-index: 5;
   }
+
   &__header {
     position: relative;
     border-radius: $border-radius;
     overflow: hidden;
   }
+
   &__img {
     background: $background-color;
     padding: 5rem 3rem 2rem;
@@ -38,15 +40,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100px;
+    border-radius: 10rem;
     text-transform: uppercase;
     background-color: #fff;
     opacity: 0;
     transition: opacity $transition-duration;
     cursor: pointer;
   }
+
   &__name {
-    font-size: 18px;
+    font-size: 1.8rem;
     letter-spacing: 2px;
     margin-top: 1.5rem;
     padding: 1rem;
@@ -56,12 +59,15 @@
     background-color: $background-color;
     transition: background $transition-duration, color $transition-duration;
   }
+
   &:hover &__img {
     filter: brightness(40%);
   }
+
   &:hover &__details-btn {
     opacity: 1;
   }
+
   &:hover &__name {
     background: #000;
     color: #fff;

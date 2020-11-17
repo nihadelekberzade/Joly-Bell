@@ -1,7 +1,7 @@
 import React from "react";
 import Product from "./Product";
 
-export default function Main() {
+function Main() {
   const shirts = [
     {
       name: "Hoodie ZIP Black",
@@ -45,3 +45,4 @@ export default function Main() {
     </main>
   );
 }
+export default Main;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function NavMenu() {
+function NavMenu() {
   const categories = [
     "Футболки",
     "Свитшоты",
@@ -41,3 +41,4 @@ export default function NavMenu() {
     </ul>
   );
 }
+export default NavMenu;

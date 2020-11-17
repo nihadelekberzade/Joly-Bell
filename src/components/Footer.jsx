@@ -2,14 +2,13 @@ import { images } from "../img/images";
 import React from "react";
 import NavMenu from "./NavMenu";
 
-export default function Footer() {
+function Footer() {
   return (
     <footer className="footer">
       <div className="footer__content">
         <div className="footer__nav-menu">
           <NavMenu />
         </div>
-
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="127"
@@ -30,7 +29,6 @@ export default function Footer() {
           </div>
           <span className="support-period">ПН-ПТ: 9:00 - 21:00</span>
         </div>
-
         <div className="footer__payment-methods">
           <div className="prefix payment-prefix">ПРИНИМАЕМ К ОПЛАТЕ:</div>
           <ul className="payment-list">
@@ -48,7 +46,6 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-
         <div className="footer__copyright">© 2020, JolyBell.com</div>
         <div className="footer__delivery-text">
           Доставка по России осуществляется службами доставки: «Почта России».
@@ -60,3 +57,4 @@ export default function Footer() {
     </footer>
   );
 }
+export default Footer;

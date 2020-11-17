@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar";
 import Login from "./Login";
 import Cart from "./Cart";
 
-export default function Header() {
+function Header() {
   const [isSidebarActive, setSidebarActive] = useState(false);
   const [isLoginTabActive, setLoginTabActive] = useState(false);
   const [isCartActive, setCartActive] = useState(false);
@@ -72,3 +72,4 @@ export default function Header() {
     </header>
   );
 }
+export default Header;

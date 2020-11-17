@@ -3,7 +3,7 @@
 import React from "react";
 import { images } from "../img/images";
 
-export default function Login({ isLoginTabActive, toggleLoginTab }) {
+function Login({ isLoginTabActive, toggleLoginTab }) {
   return (
     <div className={`login ${isLoginTabActive ? `login--active` : ``}`}>
       <div className="login__content">
@@ -57,3 +57,4 @@ export default function Login({ isLoginTabActive, toggleLoginTab }) {
     </div>
   );
 }
+export default Login;

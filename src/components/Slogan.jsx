@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Slogan() {
+function Slogan() {
   return (
     <section className="slogan">
       <h2>
@@ -10,3 +10,4 @@ export default function Slogan() {
     </section>
   );
 }
+export default Slogan;

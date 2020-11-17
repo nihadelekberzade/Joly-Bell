@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Sidebar({ isSidebarActive, toggleSidebar }) {
+function Sidebar({ isSidebarActive, toggleSidebar }) {
   const categories = [
     "shirts",
     "sweetshots",
@@ -40,3 +40,4 @@ export default function Sidebar({ isSidebarActive, toggleSidebar }) {
     </nav>
   );
 }
+export default Sidebar;
